@@ -197,9 +197,7 @@
   }
 
   .feature-line > p {
-    display: flex-wrap;
-    align-items: center;
-    justify-content: center;
+    flex: 1;
     
 
   }
@@ -207,14 +205,14 @@
   #Features {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
-    max-width: 700px;
     margin: 0 auto;
   }
 
   h3 {
-    margin-right: 120px;
+    margin-right: 50px;
+    margin-left: 30px;
+    width: 200px;
     display: flex-wrap;
     align-items: center;
     justify-content: center;
