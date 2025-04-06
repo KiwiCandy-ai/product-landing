@@ -5,12 +5,10 @@
     padding: 0;
   }
   
-  #wrapper {
-      margin-left:auto;
-      margin-right:auto;
+  
     
     
-  }
+  
    
    
   
@@ -23,24 +21,28 @@
   h1 {
     font-family: Roboto;
     display: inline-block;
-    font-size: 1.5rem;
+    font-size: 2rem;
+    margin-left: 5px;
     
   }
   
   #header-img {
-    height: 60px;
+    height: 80px;
     width: auto;
     mix-blend-mode: multiply;
-    padding-left: 20px;
-    padding-top: 20px;
+    padding: 20px 10px;
+    align-items: center;
     box-sizing: border-box;
+    margin-top: 5px;
 
   
     
   }
   
+  
+
   #header {
-    display: block;
+    display: flex;
   grid-template-columns: 50px 600px 300px;
   grid-template-rows: 80px;
   align-items: center;
@@ -48,6 +50,7 @@
   position: fixed;
   top: 0px;
   width: 100%;
+  height: 80px;
   }
   
   nav {
@@ -55,13 +58,14 @@
     justify-content: space-between; 
     margin: 20px;
     float: right;
+    margin-left: auto;
   }
   
   .nav-link {
     font-family: Roboto;
     text-decoration: none;
     color: purple;
-    justify-content: space-between; 
+    
   }
   
   .nav-link:hover {
@@ -70,14 +74,18 @@
   
   form {
     margin-top: 20px;
-    display: grid;
-    grid-template-rows: 2fr 1fr 1fr; 
-    place-items: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+  
   }
   
   h2 {
     font-family: Roboto;
     margin-top: 100px;
+    text-align: center;
   }
   
   input[type="email"] {
@@ -101,18 +109,16 @@
     height: 3rem;
     width: auto;
   mix-blend-mode: multiply;
-  padding-left: 5px;
+  padding-right: 5px;
+  margin-right: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   
-   
-  }
-  
-  #Features {
-    display: grid;
-  grid-template-columns: 1fr 3fr 5fr;
-  font-family: Roboto;
-  font-size: 1rem;
   
   }
+ 
+
   
   #video {
     display: block;
@@ -121,21 +127,29 @@
   
   #Meisterstuck, #Sailor, #Platinum  {
   border: 1px solid black;
-  width: 200px;
-  margin-bottom: 50px;
+  width: 500px;
+  margin: 0px 10px 50px 1px;
   font-family: Roboto;
   padding-left: 5px;
   padding-right: 5px;
   padding-top: 0;
+  text-align: center;
+
+  
+
     
   }
   
   #pricing {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    margin-left: 10px;
-    text-align: center;
+    display: flex;
+    margin: 0 auto;
+    
     font-size: 12px;
+  
+    justify-content: center;
+
+   
+    
     
   }
   #price {
@@ -175,4 +189,36 @@
     }
   }
 
-  
+  .feature-line {
+    display: flex;
+    flex-direction: row;
+    font-family: Roboto;
+    max-width: 700px;
+  }
+
+  .feature-line > p {
+    display: flex-wrap;
+    align-items: center;
+    justify-content: center;
+    
+
+  }
+
+  #Features {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 700px;
+    margin: 0 auto;
+  }
+
+  h3 {
+    margin-right: 120px;
+    display: flex-wrap;
+    align-items: center;
+    justify-content: center;
+    
+   
+    
+  }
