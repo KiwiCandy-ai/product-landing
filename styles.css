@@ -8,14 +8,13 @@
   #wrapper {
       margin-left:auto;
       margin-right:auto;
-      width:960px;
+    
     
   }
    
    
   
   body {
-  width: 100%;
   margin: 0 auto;
   background-color: #EEEAE4;
 
@@ -29,35 +28,40 @@
   }
   
   #header-img {
-    height: 3rem;
+    height: 60px;
     width: auto;
     mix-blend-mode: multiply;
     padding-left: 20px;
+    padding-top: 20px;
+    box-sizing: border-box;
+
   
     
   }
   
   #header {
-    display: grid;
+    display: block;
   grid-template-columns: 50px 600px 300px;
   grid-template-rows: 80px;
   align-items: center;
   background-color: rgb(223, 218, 218) ;
   position: fixed;
   top: 0px;
-  width: 960px;
+  width: 100%;
   }
   
   nav {
-    display: flex;
+    display: inline;
     justify-content: space-between; 
     margin: 20px;
+    float: right;
   }
   
   .nav-link {
     font-family: Roboto;
     text-decoration: none;
     color: purple;
+    justify-content: space-between; 
   }
   
   .nav-link:hover {
